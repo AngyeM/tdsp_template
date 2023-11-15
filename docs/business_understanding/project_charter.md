@@ -2,57 +2,52 @@
 
 ## Nombre del Proyecto
 
-[Nombre del proyecto aquí]
+Extracción y análisis de datos de soportes clinicos en PDF
 
 ## Objetivo del Proyecto
 
-[Descripción breve del objetivo del proyecto y por qué es importante]
+Se cuenta con un conjunto de historias clinicas de pacientes oncologicos en formato PDF basados en texto, a partir del cual se busca facilitar la caracterización, clasificación e identificación de información médica relacionada con su diagnóstico, seguimiento y tratamiento. Proceso que actualmente se realiza de forma manual e individual por cada paciente perteneciente a la cohorte.
+
+El seguimiento de pacientes oncologicos por lo general se realiza por una persona que dedica gran parte de su tiempo en analizar el contenido de los soportes para tener un contexto sobre el estado actual del paciente y toda su trazabilidad; se busca analizar estos documentos para facilitar la extracción de información de estas hisorias clinicas y brindar datos de seguimiento y control que faciliten el análisis de los gestores.
 
 ## Alcance del Proyecto
 
 ### Incluye:
 
-- [Descripción de los datos disponibles]
-- [Descripción de los resultados esperados]
-- [Criterios de éxito del proyecto]
+- Realizar una exploración y análisis del contenido de los soportes.
+- Identificar datos que podrían se de interés para los gestores oncológicos.
+- Utilizar herramientas de procesamiento de lenguaje natural para extraer, organizar y representar de forma intuitiva información de interés que pueda encontrarse en los soportes clinicos del corpus.
 
 ### Excluye:
 
-- [Descripción de lo que no está incluido en el proyecto]
+Relacion de datos demograficos
 
 ## Metodología
 
-[Descripción breve de la metodología que se utilizará para llevar a cabo el proyecto]
+Knowledge Discovery in Databases (KDD)
 
 ## Cronograma
+Selección
+Preprocesamiento
+Transformación
+Minería de Datos
+Evaluación
 
 | Etapa | Duración Estimada | Fechas |
 |------|---------|-------|
-| Entendimiento del negocio y carga de datos | 2 semanas | del 1 de mayo al 15 de mayo |
-| Preprocesamiento, análisis exploratorio | 4 semanas | del 16 de mayo al 15 de junio |
-| Modelamiento y extracción de características | 4 semanas | del 16 de junio al 15 de julio |
-| Despliegue | 2 semanas | del 16 de julio al 31 de julio |
-| Evaluación y entrega final | 3 semanas | del 1 de agosto al 21 de agosto |
+|Selección | 1 semana | del 7 al 14 de Noviembre  |
+|Preprocesamiento | 1 semana | del 15 al 21 de Noviembre  |
+|Transformación | 1 semana | del 22 al 28 de Noviembre  |
+|Mineria de datos| 1 semana | del 28 al 30 de Noviembre  |
+|Evaluación| 1 semana | del 30 al 2 de Diciembre |
 
 Hay que tener en cuenta que estas fechas son de ejemplo, estas deben ajustarse de acuerdo al proyecto.
 
 ## Equipo del Proyecto
 
-- [Nombre y cargo del líder del proyecto]
-- [Nombre y cargo de los miembros del equipo]
+Angye Malagon
 
 ## Presupuesto
 
-[Descripción del presupuesto asignado al proyecto]
+NA
 
-## Stakeholders
-
-- [Nombre y cargo de los stakeholders del proyecto]
-- [Descripción de la relación con los stakeholders]
-- [Expectativas de los stakeholders]
-
-## Aprobaciones
-
-- [Nombre y cargo del aprobador del proyecto]
-- [Firma del aprobador]
-- [Fecha de aprobación]

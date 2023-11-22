@@ -2,24 +2,24 @@
 
 ## Origen de los datos
 
-- [ ] Especificar la fuente de los datos y la forma en que se obtuvieron. 
+El formato inicial del corpus son archivos de PDF basados en texto, que contienen información relacionada de pacientes oncológicos
 
 ## Especificación de los scripts para la carga de datos
 
-- [ ] Especificar los scripts utilizados para la carga de los datos. 
+Utilizando python se extrae el texto plano de los archivos y se consolida en una tabla en una base de datos basada en Postgres
 
 ## Referencias a rutas o bases de datos origen y destino
 
-- [ ] Especificar las rutas o bases de datos de origen y destino para los datos.
+La base de datos con la que se trabaja es Redshift, la conexión se realiza utilizando directamente el host, usuario y contraseña.
 
 ### Rutas de origen de datos
 
-- [ ] Especificar la ubicación de los archivos de origen de los datos.
-- [ ] Especificar la estructura de los archivos de origen de los datos.
-- [ ] Describir los procedimientos de transformación y limpieza de los datos.
+Los archivos iniciales se almacenan de forma local, en un directorio se encuentran directamente los ficheros sin estructuras de subcarpetas.
 
 ### Base de datos de destino
 
-- [ ] Especificar la base de datos de destino para los datos.
-- [ ] Especificar la estructura de la base de datos de destino.
-- [ ] Describir los procedimientos de carga y transformación de los datos en la base de datos de destino.
+El siguiente proceso se realiza para cada soporte:
+
+- Extraer el texto
+- Obtener metadatos del fichero (nombre, número de páginas)
+- Los soportes cuentan con una nomeclatura que permite identificar la fecha de creación del fichero y la especialidad por lo tanto se extraen estos datos

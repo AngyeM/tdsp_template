@@ -1,0 +1,16 @@
+def plot_speciality():
+     value_counts = df['tipo_archivo'].value_counts()
+     value_counts.plot.bar()
+     plt.xlabel('Especialidad')
+     plt.ylabel('Cantidad de soportes')
+     plt.title('Cantidad de soportes por especialidad')
+     plt.show()
+
+def plot_avg_speciality()
+     avg_pages = df.groupby('tipo_archivo')['pages'].mean()
+     plt.figure(figsize=(10, 6))
+     plt.barh(avg_pages.index, avg_pages.values, color='skyblue')
+     plt.xlabel('Average Pages')
+     plt.ylabel('Especialidad')
+     plt.title('Promedio de páginas por especialidad')
+     plt.show()

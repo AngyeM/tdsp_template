@@ -5,7 +5,7 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 
 
-def objective(trial,filtered_tfidf):
+def objective(trial):
     k = trial.suggest_int("k", 5,10)   
 
     model = KMeans(n_clusters=k, random_state=0, n_init=10).fit(filtered_tfidf)
@@ -13,14 +13,14 @@ def objective(trial,filtered_tfidf):
 
     return score
 
-def run_optimization(df):
+def main():
     with mlflow.start_run():
         best_score = -1
         best_k = None
         metrics = []
 
         study = optuna.create_study(direction="maximize")
-        study.optimize(objective, n_trials=10,df)
+        study.optimize(objective, n_trials=10)
 
         mlflow.log_param("best_k", study.best_params["k"])
         mlflow.log_param("best_score", study.best_value)
@@ -39,3 +39,9 @@ def run_optimization(df):
 
         print(f"Best K (Optuna): {best_k_optuna}")
         print(f"Best Silhouette Score (Optuna): {best_score_optuna}")
+
+if __name__ == "__main__":
+    # Load your data (assuming 'filtered_tfidf' is defined)
+    # filtered_tfidf = ...
+
+    main()

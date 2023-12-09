@@ -17,6 +17,7 @@ El seguimiento de pacientes oncologicos por lo general se realiza por una person
 - Realizar una exploración y análisis del contenido de los soportes.
 - Identificar datos que podrían se de interés para los gestores oncológicos.
 - Utilizar herramientas de procesamiento de lenguaje natural para extraer, organizar y representar de forma intuitiva información de interés que pueda encontrarse en los soportes clinicos del corpus.
+- Generar un API que permita visualizar los resultados del modelo
 
 ### Excluye:
 

@@ -7,6 +7,7 @@
 - **Requisitos técnicos:** Validar requirements.txt
 - **Requisitos de seguridad:** Credenciales de autenticación a la BD
 - **Diagrama de arquitectura:** 
+<image src="ARQ.png" alt="Descripción de la imagen">
 
 
 ## Código de despliegue
